@@ -1,0 +1,1450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="5cbadcef-5d1d-4204-aba9-96411ff3dd8b"
+  name="TrocadoSimulator.Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="9ab65cfe-98f3-4e4d-90db-479303d89f21"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="9e67b67d-614c-4ab4-bfbb-daddc2cc6314"
+        name="Actor2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="fc32d66e-8ac9-41c9-a6b3-cf5ea6f26c4a"
+        name="Usuário"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="39462333-4974-4cae-8146-4f246f992b18"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="Inserir Valor do Produto"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="02dd18d0-1010-426c-a086-5ec92240e374"
+              LastKnownName="Inserir Valor do Produto"
+              LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d52dcf22-f773-4e41-a0ed-389fbe384453"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4b8070f1-9620-450d-8762-58f7a33abb2d"
+                  name="Inserir Valor do Produto"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2717773c-bce2-45d8-a130-146f0eb8db69"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="Inserir Valor Pago"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8c0dda8d-2738-485a-add9-9004d40305a9"
+              LastKnownName="Inserir Valor Pago"
+              LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a783f8c9-1465-44e3-8322-c12ef3baa5e4"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a036b1f7-721b-40b6-9861-3ea25c355993"
+                  name="Inserir Valor Pago"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="35418efc-5c51-40b9-af2e-777960eb5de4"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="Clicar Botão Submit"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6264f314-2a38-40c0-ba0d-4228c676a12c"
+              LastKnownName="Clicar Botão Submit"
+              LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="162b89f9-1144-404b-b419-842f3682d551"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9971ab4b-cc25-4a65-a4be-50e80b8a893f"
+                  name="Clicar Botão Submit"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="02dd18d0-1010-426c-a086-5ec92240e374"
+        name="Inserir Valor do Produto"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8c0dda8d-2738-485a-add9-9004d40305a9"
+        name="Inserir Valor Pago"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6264f314-2a38-40c0-ba0d-4228c676a12c"
+        name="Clicar Botão Submit"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="c2f13730-bda2-4942-b168-0263c01ef00f">
+            <useCaseMoniker
+              Id="7f64504a-1e5c-440b-aebd-548ba5a5d171"
+              LastKnownName="Calcular Troco"
+              LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7f64504a-1e5c-440b-aebd-548ba5a5d171"
+        name="Calcular Troco"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="494ed2ce-5114-40ca-bee4-a21ec9e156ac"
+        name="Aplicação"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="5decdc29-cf49-4b18-a8b1-1d752f220c66"
+            isDerived="false"
+            sourceEndRoleName="Aplicação"
+            targetEndRoleName="Calcular Troco"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7f64504a-1e5c-440b-aebd-548ba5a5d171"
+              LastKnownName="Calcular Troco"
+              LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b6b79659-00ec-4a26-96d0-50d333ad3055"
+                  name="Aplicação"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0e2c81a8-8a00-4cbc-b239-ea3d06b4a882"
+                  name="Calcular Troco"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="67baf45b-e075-4103-8c43-f7f344b2eaca"
+            isDerived="false"
+            sourceEndRoleName="Aplicação"
+            targetEndRoleName="Exibir Troco Calculado"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6a37ed47-50e3-40d8-94b0-01756e9fd2fb"
+              LastKnownName="Exibir Troco Calculado"
+              LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cbf7063b-451f-48bc-b7b9-972936ab7944"
+                  name="Aplicação"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e09d6138-571a-47a4-bd77-edad911dada7"
+                  name="Exibir Troco Calculado"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6a37ed47-50e3-40d8-94b0-01756e9fd2fb"
+        name="Exibir Troco Calculado"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="2a359da7-3511-4234-844e-9dce3d4820c8"
+        name="TrocadoSimulatorFlow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <opaqueAction
+            Id="b328a7a2-3460-4262-93e1-72e4ac12c3d6"
+            name="Inserir Valor do Produto"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c5af6321-61af-4b9f-a9a2-2ce6b0748fbe"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d57b5382-555c-4fe6-8c4c-9030f99a2f64"
+                  LastKnownName="Inserir o valor pago"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d57b5382-555c-4fe6-8c4c-9030f99a2f64"
+            name="Inserir o valor pago"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="aaba66ac-94b8-45f9-bda6-9b449f1a5b49"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="36d08ac5-cb00-483b-9e39-ab489b68af6a"
+                  LastKnownName="Validar os inputs"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode
+            Id="0479cc9a-0116-4fb1-8b0a-81b1800c72d4"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="42359efe-7947-41f8-b107-0e80a50d5934"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b328a7a2-3460-4262-93e1-72e4ac12c3d6"
+                  LastKnownName="Inserir Valor do Produto"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="36d08ac5-cb00-483b-9e39-ab489b68af6a"
+            name="Validar os inputs"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="88a37692-e1b1-4b4a-99f9-519d27b21a8e"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="386b8fca-4fec-4d52-abbc-c1b1efacda1a"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="65e8123a-41f7-4b36-bf5f-416fbd9ef9d7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8ede13a2-f977-4d67-926d-8563134b395a"
+                  LastKnownName="Validar valor pago"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="386b8fca-4fec-4d52-abbc-c1b1efacda1a"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bafa8aba-8e32-48e4-a388-a874a17fdffe"
+                guard="Dados inválidos"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b490bf4a-d370-4b8f-83a1-48d8b4bce7bc"
+                  LastKnownName="Retornar dados inválidos"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="31081c62-b079-4cd3-a9a6-8a22f4ff9541"
+                guard="Dados válidos"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8e78e0c2-8e22-43ae-a0e1-b696d6779a23"
+                  LastKnownName="Calcular troco"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="b490bf4a-d370-4b8f-83a1-48d8b4bce7bc"
+            name="Retornar dados inválidos"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="38ad14cd-a750-4f74-9e22-b55e85a30ba6"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="c516c86b-e0b3-49fa-9fc1-c0d71b41f5a6"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="8e78e0c2-8e22-43ae-a0e1-b696d6779a23"
+            name="Calcular troco"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2c5f97cf-4ea5-406a-b0e1-b577a50cb548"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="a483c3ea-cafd-46f2-9bb5-e40a32b32607"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="c516c86b-e0b3-49fa-9fc1-c0d71b41f5a6"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <decisionNode
+            Id="a483c3ea-cafd-46f2-9bb5-e40a32b32607"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d169d65d-d9e0-4d86-8d21-c1c2ba5df8da"
+                guard="Troco maior que zero"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9220d7ad-fd7b-42b9-a634-0c49c6d75fda"
+                  LastKnownName="Selecionar processador"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="ffb459d0-c4ab-4183-94a1-a253ba1971b5"
+                guard="Troco menor ou igual a zero"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="841541e3-9d93-46e2-9052-687be68069ed"
+                  LastKnownName="Retorna o resultado do processamento"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="9220d7ad-fd7b-42b9-a634-0c49c6d75fda"
+            name="Selecionar processador"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="67b0d8e8-6e50-4f81-b927-13a6a18b4bbf"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="59e5ea12-3a17-476f-9d11-3a9d44d2fb2e"
+                  LastKnownName="Validar troco"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="59e5ea12-3a17-476f-9d11-3a9d44d2fb2e"
+            name="Validar troco"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6e875b76-b9db-4447-be6a-3dafa55f47c4"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="2cf6800e-0d61-4b86-a0f2-35b3f740edca"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="2cf6800e-0d61-4b86-a0f2-35b3f740edca"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="71760497-9330-4011-b487-dd8dbf1a17ad"
+                guard="Troco válido"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9cd09f52-9a62-4759-8da7-c948c8d5808c"
+                  LastKnownName="Processar troco"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="aa1d9f08-0e3c-4f04-a90e-39eb823a34cd"
+                guard="Troco inválido"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8f34a680-c64d-4077-9cac-8a3bae835d7c"
+                  LastKnownName="Lança exceção"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="841541e3-9d93-46e2-9052-687be68069ed"
+            name="Retorna o resultado do processamento"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dad570b0-00db-49e7-8eca-7b2956576cb6"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="ba262c0f-f973-4249-8da5-95e311bb30c4"
+                  LastKnownName="ActivityFinal2"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="ba262c0f-f973-4249-8da5-95e311bb30c4"
+            name="ActivityFinal2"
+            isLeaf="false" />
+          <opaqueAction
+            Id="9cd09f52-9a62-4759-8da7-c948c8d5808c"
+            name="Processar troco"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7938a145-f732-4c7e-a9fc-3751c1f75d67"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="3dc2bb50-7be6-4455-bf8f-954d33496316"
+                  LastKnownName="Dispara um evento informando que o processador terminou o cálculo."
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="9ed0ee2e-6b74-4776-bfe0-8c82bbe68d9e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ff9bb823-527c-40fd-9a8e-12beb4fd4e73"
+                  LastKnownName="Subtrai troco processado do valor total a ser retornado"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="8f34a680-c64d-4077-9cac-8a3bae835d7c"
+            name="Lança exceção"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="150149d6-ac88-452f-b0de-8c16884f22d6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="841541e3-9d93-46e2-9052-687be68069ed"
+                  LastKnownName="Retorna o resultado do processamento"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <sendSignalAction
+            Id="3dc2bb50-7be6-4455-bf8f-954d33496316"
+            name="Dispara um evento informando que o processador terminou o cálculo."
+            isLeaf="false" />
+          <opaqueAction
+            Id="8ede13a2-f977-4d67-926d-8563134b395a"
+            name="Validar valor pago"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f628e5e9-2f56-4776-b2f5-058ce2bf6b82"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c3dae1bb-6363-4f70-8bd6-3553d94118d0"
+                  LastKnownName="Validar valor produto"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c3dae1bb-6363-4f70-8bd6-3553d94118d0"
+            name="Validar valor produto"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fb9a7247-9aa8-412c-9ec4-a1fd09c90d1f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="36d08ac5-cb00-483b-9e39-ab489b68af6a"
+                  LastKnownName="Validar os inputs"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ff9bb823-527c-40fd-9a8e-12beb4fd4e73"
+            name="Subtrai troco processado do valor total a ser retornado"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="db8a0412-1090-4e0d-81af-7242e8b7bce5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8e78e0c2-8e22-43ae-a0e1-b696d6779a23"
+                  LastKnownName="Calcular troco"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="3f453748-a6fa-44e4-932a-78210bd266a5"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <messageOccurrenceSpecification
+            Id="c9005e1f-baa7-4f98-b439-36b9bde4f8a5"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="19cb57aa-8cae-4e04-9736-4119de154a30"
+                LastKnownName="ChangeManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="615c0e2b-2312-493f-be19-395c5df317cc"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="19cb57aa-8cae-4e04-9736-4119de154a30"
+                LastKnownName="ChangeManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="9bfc715c-e923-4c87-9daf-b092fc25b696"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f91f6822-c1ee-47db-9505-345eeb931b8e"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="13e108be-2972-4561-a1aa-3759bd3f9fb5"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="f91f6822-c1ee-47db-9505-345eeb931b8e"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="afe03322-b1d9-4978-b087-c34815e28e99"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="19cb57aa-8cae-4e04-9736-4119de154a30"
+                LastKnownName="ChangeManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="13e108be-2972-4561-a1aa-3759bd3f9fb5"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="19cb57aa-8cae-4e04-9736-4119de154a30"
+                LastKnownName="ChangeManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="9bfc715c-e923-4c87-9daf-b092fc25b696"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b589fa81-df69-46f0-935e-ca4734ac1545"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="19cb57aa-8cae-4e04-9736-4119de154a30"
+                LastKnownName="ChangeManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="98482172-3cef-44c0-8425-6245b18ec36b"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="34080da5-ab1d-445b-b7e3-7a7e3e4c65d7"
+                LastKnownName="LogManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="0eb91ff1-bcaf-40c9-b0d4-b20fda7177ff"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="61811af0-8670-4d8a-99a3-17b3f23598f2"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="199118a8-4063-4ef4-9d2e-f5ef30331781"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="74b3c1ba-32ae-4846-8f34-5add084ff084"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="61811af0-8670-4d8a-99a3-17b3f23598f2"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="1d04f1cb-5aa2-4deb-b9d9-ea5000e6cc5c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="34080da5-ab1d-445b-b7e3-7a7e3e4c65d7"
+                LastKnownName="LogManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2bd39173-7e6f-4994-a492-b4fcaaa8f19d"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="19cb57aa-8cae-4e04-9736-4119de154a30"
+                LastKnownName="ChangeManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="199118a8-4063-4ef4-9d2e-f5ef30331781"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="34080da5-ab1d-445b-b7e3-7a7e3e4c65d7"
+                LastKnownName="LogManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="77dba78f-abec-4816-b08f-f270da472734"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="19cb57aa-8cae-4e04-9736-4119de154a30"
+                LastKnownName="ChangeManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="74b3c1ba-32ae-4846-8f34-5add084ff084"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="34080da5-ab1d-445b-b7e3-7a7e3e4c65d7"
+                LastKnownName="LogManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="0eb91ff1-bcaf-40c9-b0d4-b20fda7177ff"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="41ae9b8c-b382-41b0-81fe-bf840856aa9d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="34080da5-ab1d-445b-b7e3-7a7e3e4c65d7"
+                LastKnownName="LogManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="f30ed756-3420-4271-85c8-df8f01a8b0fc"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="d552493f-7372-438c-8dfb-ca70fcc139eb"
+                LastKnownName="Processor"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="1080b15e-3941-4d3e-a8f8-a2fb496cf324"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="c25f4b1a-81c0-4d5d-ab4a-461b7b37b916"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="fb3c31c6-8b9f-4d0a-9f98-30cee8e497de"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="435139d3-943e-412f-b7b4-7b4090612193"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="c25f4b1a-81c0-4d5d-ab4a-461b7b37b916"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="fa85e879-4a42-4f1c-b1ee-5e78f54dbb54"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="d552493f-7372-438c-8dfb-ca70fcc139eb"
+                LastKnownName="Processor"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="fb3c31c6-8b9f-4d0a-9f98-30cee8e497de"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="d552493f-7372-438c-8dfb-ca70fcc139eb"
+                LastKnownName="Processor"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8f86d65f-1d95-4d6b-831c-a589c9ccdf13"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="19cb57aa-8cae-4e04-9736-4119de154a30"
+                LastKnownName="ChangeManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="435139d3-943e-412f-b7b4-7b4090612193"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="d552493f-7372-438c-8dfb-ca70fcc139eb"
+                LastKnownName="Processor"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8fe5d791-ef64-45a7-afd0-01dd3aac0788"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="19cb57aa-8cae-4e04-9736-4119de154a30"
+                LastKnownName="ChangeManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1080b15e-3941-4d3e-a8f8-a2fb496cf324"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="92c8dfa0-3d5e-4351-836c-b20846a1c44d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="d552493f-7372-438c-8dfb-ca70fcc139eb"
+                LastKnownName="Processor"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="bdb64c4c-ac33-492d-964f-567de4507478"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="34080da5-ab1d-445b-b7e3-7a7e3e4c65d7"
+                LastKnownName="LogManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="d2a39c80-81b0-48a8-ac0d-0a691293f6a7"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="b88ba202-c472-48a1-9d90-2b4e0204b817"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="cbf89e5b-5066-46c3-9f6c-4dd4889e5506"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="b88ba202-c472-48a1-9d90-2b4e0204b817"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5a732580-e191-43b5-8878-62c6b904d293"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="34080da5-ab1d-445b-b7e3-7a7e3e4c65d7"
+                LastKnownName="LogManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e5885a2f-e6c0-4f7e-94f2-2eb470d42552"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="19cb57aa-8cae-4e04-9736-4119de154a30"
+                LastKnownName="ChangeManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cbf89e5b-5066-46c3-9f6c-4dd4889e5506"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="34080da5-ab1d-445b-b7e3-7a7e3e4c65d7"
+                LastKnownName="LogManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="d2a39c80-81b0-48a8-ac0d-0a691293f6a7"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e8329a81-4e1c-4cd6-9e07-70082d853430"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="34080da5-ab1d-445b-b7e3-7a7e3e4c65d7"
+                LastKnownName="LogManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="1ee557a0-03bb-41e8-a50a-22fb6fb42618"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="34080da5-ab1d-445b-b7e3-7a7e3e4c65d7"
+                LastKnownName="LogManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="b8ec5996-e986-41e4-887e-170f09d826a2"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f254d16c-bb7d-4c56-8f1d-db1b08117279"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="f8df820f-37fd-49d2-b104-f085b7e39642"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="61c40b1b-cfb4-4274-9848-e70b268399c8"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="f254d16c-bb7d-4c56-8f1d-db1b08117279"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d1ba12e6-909f-4315-b673-865ea3c67e5a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="34080da5-ab1d-445b-b7e3-7a7e3e4c65d7"
+                LastKnownName="LogManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6b796615-5499-4ae3-9bc8-0c6697355762"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="19cb57aa-8cae-4e04-9736-4119de154a30"
+                LastKnownName="ChangeManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f8df820f-37fd-49d2-b104-f085b7e39642"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="34080da5-ab1d-445b-b7e3-7a7e3e4c65d7"
+                LastKnownName="LogManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="61c40b1b-cfb4-4274-9848-e70b268399c8"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="34080da5-ab1d-445b-b7e3-7a7e3e4c65d7"
+                LastKnownName="LogManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="85ba9a20-297a-47a4-8ac1-c246ace11cb3"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="19cb57aa-8cae-4e04-9736-4119de154a30"
+                LastKnownName="ChangeManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="b8ec5996-e986-41e4-887e-170f09d826a2"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d31802b5-a64c-4ea5-b7ac-15e01353cbc3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="34080da5-ab1d-445b-b7e3-7a7e3e4c65d7"
+                LastKnownName="LogManager"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="19cb57aa-8cae-4e04-9736-4119de154a30"
+            name="ChangeManager"
+            isActor="false"
+            lifelineDisplayName="ChangeManager">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="c9005e1f-baa7-4f98-b439-36b9bde4f8a5"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f91f6822-c1ee-47db-9505-345eeb931b8e"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="9bfc715c-e923-4c87-9daf-b092fc25b696"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2bd39173-7e6f-4994-a492-b4fcaaa8f19d"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="77dba78f-abec-4816-b08f-f270da472734"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8f86d65f-1d95-4d6b-831c-a589c9ccdf13"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8fe5d791-ef64-45a7-afd0-01dd3aac0788"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e5885a2f-e6c0-4f7e-94f2-2eb470d42552"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6b796615-5499-4ae3-9bc8-0c6697355762"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="85ba9a20-297a-47a4-8ac1-c246ace11cb3"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="34080da5-ab1d-445b-b7e3-7a7e3e4c65d7"
+            name="LogManager"
+            isActor="false"
+            lifelineDisplayName="LogManager">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="61811af0-8670-4d8a-99a3-17b3f23598f2"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="0eb91ff1-bcaf-40c9-b0d4-b20fda7177ff"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b88ba202-c472-48a1-9d90-2b4e0204b817"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="d2a39c80-81b0-48a8-ac0d-0a691293f6a7"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f254d16c-bb7d-4c56-8f1d-db1b08117279"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b8ec5996-e986-41e4-887e-170f09d826a2"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="d552493f-7372-438c-8dfb-ca70fcc139eb"
+            name="Processor"
+            isActor="false"
+            lifelineDisplayName="Processor">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="c25f4b1a-81c0-4d5d-ab4a-461b7b37b916"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1080b15e-3941-4d3e-a8f8-a2fb496cf324"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="aa609681-d8bb-43cd-beca-84bb3560cbaf"
+            name="Validate"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c9005e1f-baa7-4f98-b439-36b9bde4f8a5"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="13e108be-2972-4561-a1aa-3759bd3f9fb5"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="55af7387-57b7-41a6-bfe8-b76f4d6c3a65"
+            name="Log da operação"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2bd39173-7e6f-4994-a492-b4fcaaa8f19d"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="199118a8-4063-4ef4-9d2e-f5ef30331781"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="80c0ba05-71aa-4846-b381-b19f48f12ae0"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="74b3c1ba-32ae-4846-8f34-5add084ff084"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="77dba78f-abec-4816-b08f-f270da472734"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="6de2f67b-a0b8-45f2-8ce4-2658b9be31a1"
+            name="Selecionar processador"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8f86d65f-1d95-4d6b-831c-a589c9ccdf13"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="fb3c31c6-8b9f-4d0a-9f98-30cee8e497de"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="cab8d200-4cf3-43d5-b21b-34050b485045"
+            name="&lt;&lt;AbstractProcessor&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="435139d3-943e-412f-b7b4-7b4090612193"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8fe5d791-ef64-45a7-afd0-01dd3aac0788"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="d2ef9f37-e47d-4592-9246-aa2bd95b1418"
+            name="Message1"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e5885a2f-e6c0-4f7e-94f2-2eb470d42552"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cbf89e5b-5066-46c3-9f6c-4dd4889e5506"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="acd864c2-b154-4746-b7f6-9c82dac9e270"
+            name="&lt;&lt;create&gt;&gt;"
+            messageKind="Complete"
+            messageSort="CreateMessage"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6b796615-5499-4ae3-9bc8-0c6697355762"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f8df820f-37fd-49d2-b104-f085b7e39642"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="4dd62566-bdbc-4141-a4d8-4cdb6d4a31af"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="61c40b1b-cfb4-4274-9848-e70b268399c8"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="85ba9a20-297a-47a4-8ac1-c246ace11cb3"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="TrocadoSimulator.Modeling.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="afe03322-b1d9-4978-b087-c34815e28e99"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b589fa81-df69-46f0-935e-ca4734ac1545"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="1d04f1cb-5aa2-4deb-b9d9-ea5000e6cc5c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="41ae9b8c-b382-41b0-81fe-bf840856aa9d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="fa85e879-4a42-4f1c-b1ee-5e78f54dbb54"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="92c8dfa0-3d5e-4351-836c-b20846a1c44d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5a732580-e191-43b5-8878-62c6b904d293"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e8329a81-4e1c-4cd6-9e07-70082d853430"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d1ba12e6-909f-4315-b673-865ea3c67e5a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d31802b5-a64c-4ea5-b7ac-15e01353cbc3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

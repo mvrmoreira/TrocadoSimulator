@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="89c65e18-f129-42eb-bccc-bf93c3539135" name="TrocadoSimulator" linkedPackageId="1dafefdd-4a09-444f-8724-b383d00a9b9e" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="3e7aa1a6-0ad8-4fe5-a6a5-8316d0545b87">
+      <profileInstance Id="10586458-4911-4686-baf1-86fdbcd46821" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e8a9f94e-8256-400a-917e-dc76e1679039">
+      <profileInstance Id="8d8b9b18-f4f4-45af-86dc-676d0539b44c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="9074d109-8bf6-4b2c-8790-e238b8bc0a98" name="Usuário" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fc32d66e-8ac9-41c9-a6b3-cf5ea6f26c4a" />
+        <targetEnds>
+          <association Id="3c39112d-6026-4594-9f29-9a5ffd58d72b" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="Inserir Valor do Produto" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e4173932-0361-48f1-ba9a-e2bbfb162a50" LastKnownName="Inserir Valor do Produto" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b14fd393-7381-4112-b89c-a82588586933" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d52dcf22-f773-4e41-a0ed-389fbe384453" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa357bba-fbbc-41b4-9349-b286563f3839" name="Inserir Valor do Produto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4b8070f1-9620-450d-8762-58f7a33abb2d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="39462333-4974-4cae-8146-4f246f992b18" />
+          </association>
+          <association Id="b061eb4a-e0f2-4426-a525-ebd90829c670" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="Inserir Valor Pago" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a1b7dd61-8889-4862-90d5-340b539b4e5c" LastKnownName="Inserir Valor Pago" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2b4c6a7e-4f4d-4fc7-a1bb-23ae0901265e" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a783f8c9-1465-44e3-8322-c12ef3baa5e4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="21a62501-af75-4820-aad5-177f86cc6649" name="Inserir Valor Pago" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a036b1f7-721b-40b6-9861-3ea25c355993" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2717773c-bce2-45d8-a130-146f0eb8db69" />
+          </association>
+          <association Id="99fbe4ad-b238-4904-8c4a-479472df6353" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="Clicar Botão Submit" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fd26aa32-4cb9-4918-8abf-1445bb7f92f5" LastKnownName="Clicar Botão Submit" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4088127f-653a-42c2-866e-5ace65ae22a2" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="162b89f9-1144-404b-b419-842f3682d551" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="61fc8e9e-e276-4ce6-85fa-4d5fa36ea1ce" name="Clicar Botão Submit" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9971ab4b-cc25-4a65-a4be-50e80b8a893f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="35418efc-5c51-40b9-af2e-777960eb5de4" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e4173932-0361-48f1-ba9a-e2bbfb162a50" name="Inserir Valor do Produto" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="02dd18d0-1010-426c-a086-5ec92240e374" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a1b7dd61-8889-4862-90d5-340b539b4e5c" name="Inserir Valor Pago" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c0dda8d-2738-485a-add9-9004d40305a9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fd26aa32-4cb9-4918-8abf-1445bb7f92f5" name="Clicar Botão Submit" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6264f314-2a38-40c0-ba0d-4228c676a12c" />
+        <suppliersInternal>
+          <dependency Id="a6b43c4c-3c68-4b37-bc52-84c1a87c2e1c">
+            <useCaseMoniker Id="48c4073c-da5f-4b8f-9a0c-1651733c6031" LastKnownName="Calcular Troco" />
+            <elementDefinition Id="c2f13730-bda2-4942-b168-0263c01ef00f" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="48c4073c-da5f-4b8f-9a0c-1651733c6031" name="Calcular Troco" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7f64504a-1e5c-440b-aebd-548ba5a5d171" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="9287a708-a6a6-47f5-80c7-94c9324a8276" name="Aplicação" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="494ed2ce-5114-40ca-bee4-a21ec9e156ac" />
+        <targetEnds>
+          <association Id="e65632d3-ab09-4f73-9102-44fdf653118e" isDerived="false" sourceEndRoleName="Aplicação" targetEndRoleName="Calcular Troco" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="48c4073c-da5f-4b8f-9a0c-1651733c6031" LastKnownName="Calcular Troco" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d74c06e8-170d-4773-8acc-1e7f3a3a7ebc" name="Aplicação" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b6b79659-00ec-4a26-96d0-50d333ad3055" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="532591a9-2fc7-4652-9928-78720c8bd96e" name="Calcular Troco" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0e2c81a8-8a00-4cbc-b239-ea3d06b4a882" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5decdc29-cf49-4b18-a8b1-1d752f220c66" />
+          </association>
+          <association Id="31c96578-e5c1-4466-98b7-74cfac50b875" isDerived="false" sourceEndRoleName="Aplicação" targetEndRoleName="Exibir Troco Calculado" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="58b9575e-b273-4e87-96f0-fa525045727d" LastKnownName="Exibir Troco Calculado" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e6ab63fc-4cf6-4a55-906c-5759cdd59bd9" name="Aplicação" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cbf7063b-451f-48bc-b7b9-972936ab7944" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd24020e-aa8b-4159-8052-90c8c6b6ad0b" name="Exibir Troco Calculado" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e09d6138-571a-47a4-bd77-edad911dada7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="67baf45b-e075-4103-8c43-f7f344b2eaca" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="58b9575e-b273-4e87-96f0-fa525045727d" name="Exibir Troco Calculado" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6a37ed47-50e3-40d8-94b0-01756e9fd2fb" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="1dafefdd-4a09-444f-8724-b383d00a9b9e" name="TrocadoSimulator.Modeling">
+    <elementDefinition Id="5cbadcef-5d1d-4204-aba9-96411ff3dd8b" />
+  </package>
+</useCaseModelRoot>

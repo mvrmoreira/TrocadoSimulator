@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="f3e58207-ea7d-4b96-86c8-35aa6ce695c9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="3d06d271-1ff9-49b5-bdcc-eb2f01d8e4e2" name="User Interface&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="e080a706-486a-456d-9fcc-d45850661a56" direction="Forward">
+          <layerMoniker Id="7d056fa8-179f-45cd-bdfa-bc96bf9be284" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="6daa0924-dd42-4580-b0cc-67b1cfac6fec" name="TrocadoSimulator">
+          <ArtifactNode Label="TrocadoSimulator" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator/TrocadoSimulator.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=TrocadoSimulator)" Label="TrocadoSimulator.exe" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="7d056fa8-179f-45cd-bdfa-bc96bf9be284" name="Business Logic">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="536e40c5-d0a4-4ad9-9e69-3dab591d426f" direction="Forward">
+          <layerMoniker Id="a00d9f41-d6b1-446c-85db-7a48939cc2e3" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="04940126-060c-40f3-983c-015ff019f7f3" direction="Bidirectional">
+          <layerMoniker Id="f0471daf-e01a-4eec-ae0c-af67deb95c33" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="610d99bc-48a7-4775-9e38-119e9ef65152" name="Processors">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="7497fab6-2f7d-4269-9e52-1e162f8c4fbb" direction="Forward">
+              <layerMoniker Id="0e7768b3-1698-478c-86ef-05cd125f2b53" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="24053f69-b5fe-4026-8cf3-57ebebe41459" name="Processors">
+              <ArtifactNode Label="Processors" Category="CodeSchema_ProjectItem" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/TrocadoSimulator.BusinessLogic.csproj&quot; File=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/Processors/&quot;)">
+                <Category Ref="ProjectFolder" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic.Processors Type=AbstractChangeProcessor)" Label="AbstractChangeProcessor" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+              <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic.Processors Type=BankNoteProcessor)" Label="BankNoteProcessor" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+              <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic.Processors Type=CandyProcessor)" Label="CandyProcessor" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+              <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic.Processors Type=CoinProcessor)" Label="CoinProcessor" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+              <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic.Processors Type=ProcessorFactory)" Label="ProcessorFactory" Category="CodeSchema_Class">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="0e7768b3-1698-478c-86ef-05cd125f2b53" name="Logs&#xD;&#xA;">
+          <references>
+            <reference Id="fe89504e-f385-425b-ab28-0e50de3b3552" name="Logs">
+              <ArtifactNode Label="Logs" Category="CodeSchema_ProjectItem" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/TrocadoSimulator.BusinessLogic.csproj&quot; File=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/Logs/&quot;)">
+                <Category Ref="ProjectFolder" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic.Logs Type=LogRepositoryEnum)" Label="LogRepositoryEnum" Category="CodeSchema_Enum">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+              <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic.Logs Type=LogSeverityEnum)" Label="LogSeverityEnum" Category="CodeSchema_Enum">
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+            <reference Id="b5583f41-7724-4158-8961-7b1d947db62d" name="FileLogger.cs">
+              <ArtifactNode Label="FileLogger.cs" Category="CodeSchema_ProjectItem" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/TrocadoSimulator.BusinessLogic.csproj&quot; File=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/FileLogger.cs&quot;)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic Type=FileLogger)" Label="FileLogger" Category="CodeSchema_Class">
+                <LinkCategory Ref="Contains" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+            <reference Id="4bebd2be-6b60-4361-a032-6e9d514cfb84" name="ILogger.cs">
+              <ArtifactNode Label="ILogger.cs" Category="CodeSchema_ProjectItem" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/TrocadoSimulator.BusinessLogic.csproj&quot; File=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/ILogger.cs&quot;)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic Type=ILogger)" Label="ILogger" Category="CodeSchema_Interface">
+                <LinkCategory Ref="Contains" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+            <reference Id="9f4b6885-bfe3-46d0-8c7c-567442dcc353" name="LogFactory.cs">
+              <ArtifactNode Label="LogFactory.cs" Category="CodeSchema_ProjectItem" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/TrocadoSimulator.BusinessLogic.csproj&quot; File=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/LogFactory.cs&quot;)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic Type=LogFactory)" Label="LogFactory" Category="CodeSchema_Class">
+                <LinkCategory Ref="Contains" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+            <reference Id="2325973f-2aa9-45ee-a13f-1ad0e303b19d" name="WindowsEventLogger.cs">
+              <ArtifactNode Label="WindowsEventLogger.cs" Category="CodeSchema_ProjectItem" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/TrocadoSimulator.BusinessLogic.csproj&quot; File=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/WindowsEventLogger.cs&quot;)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic Type=WindowsEventLogger)" Label="WindowsEventLogger" Category="CodeSchema_Class">
+                <LinkCategory Ref="Contains" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+      <references>
+        <reference Id="8afcfedd-c785-4de7-80b8-4a2c0e44cf96" name="TrocadoSimulator.BusinessLogic">
+          <ArtifactNode Label="TrocadoSimulator.BusinessLogic" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/TrocadoSimulator.BusinessLogic.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic)" Label="TrocadoSimulator.BusinessLogic.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="a00d9f41-d6b1-446c-85db-7a48939cc2e3" name="Data Access">
+      <references>
+        <reference Id="fbb12b85-20d1-44a8-9991-a729c7024bb5" name="Repository">
+          <ArtifactNode Label="Repository" Category="CodeSchema_ProjectItem" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/TrocadoSimulator.BusinessLogic.csproj&quot; File=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/Repository/&quot;)">
+            <Category Ref="ProjectFolder" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic.Repository Type=AbstractRepository)" Label="AbstractRepository" Category="CodeSchema_Class">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic.Repository Type=ApplicationLogCategoryRepository)" Label="ApplicationLogCategoryRepository" Category="CodeSchema_Class">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic.Repository Type=ApplicationLogRepository)" Label="ApplicationLogRepository" Category="CodeSchema_Class">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic.Repository.Entities Type=ApplicationLogCategoryEntity)" Label="ApplicationLogCategoryEntity" Category="CodeSchema_Class">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic.Repository.Entities Type=ApplicationLogEntity)" Label="ApplicationLogEntity" Category="CodeSchema_Class">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic.Repository Type=IApplicationLogCategoryRepository)" Label="IApplicationLogCategoryRepository" Category="CodeSchema_Interface">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic.Repository Type=IApplicationLogRepository)" Label="IApplicationLogRepository" Category="CodeSchema_Interface">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="f0471daf-e01a-4eec-ae0c-af67deb95c33" name="Configuration Utility&#xD;&#xA;">
+      <references>
+        <reference Id="1a9feb37-12d9-4f5e-ae26-3a8783f6c152" name="ConfigurationUtility.cs">
+          <ArtifactNode Label="ConfigurationUtility.cs" Category="CodeSchema_ProjectItem" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/TrocadoSimulator.BusinessLogic.csproj&quot; File=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/Utility/ConfigurationUtility.cs&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic.Utility Type=ConfigurationUtility)" Label="ConfigurationUtility" Category="CodeSchema_Class">
+            <LinkCategory Ref="Contains" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="dd7bbfe1-3976-41e9-ba4e-2da4a2d4c5aa" name="IConfigurationUtility.cs">
+          <ArtifactNode Label="IConfigurationUtility.cs" Category="CodeSchema_ProjectItem" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/TrocadoSimulator.BusinessLogic.csproj&quot; File=&quot;$(PersonalUri)/Visual Studio 2013/Projects/TrocadoSimulator/TrocadoSimulator.BusinessLogic/Utility/IConfigurationUtility.cs&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=TrocadoSimulator.BusinessLogic Namespace=TrocadoSimulator.BusinessLogic.Utility Type=IConfigurationUtility)" Label="IConfigurationUtility" Category="CodeSchema_Interface">
+            <LinkCategory Ref="Contains" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="df30d820-09ff-4744-bd92-1500bc99ae03" name="TrocadoSimulatorFlow" linkedPackageId="3d7e16b0-dc82-45f8-b626-0f0c6ad23f17" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e7106591-b5b4-4e34-9c97-888988be5ec3">
+      <profileInstance Id="236954f1-f5e1-490d-bd7f-a394b4013283" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="944ba509-e546-486f-ad3d-777b2eaeaa47">
+      <profileInstance Id="577a1729-aa94-4c0f-9a9b-a6d2049d69ad" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="ca2d4f80-6a16-4534-9150-8874c3f2b237" name="TrocadoSimulatorFlow" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="2a359da7-3511-4234-844e-9dce3d4820c8" />
+        <nodes>
+          <opaqueAction Id="a48ab33a-3ee0-4375-938d-68cdd5a3a6d1" name="Inserir Valor do Produto" isLeaf="false">
+            <elementDefinition Id="b328a7a2-3460-4262-93e1-72e4ac12c3d6" />
+            <flowNodeTargets>
+              <controlFlow Id="43fd9837-3a75-47c8-9577-fec1c49dcf62" isLeaf="false">
+                <opaqueActionMoniker Id="d16021db-6e7c-46b7-b920-3fdbb798a2f0" LastKnownName="Inserir o valor pago" />
+                <elementDefinition Id="c5af6321-61af-4b9f-a9a2-2ce6b0748fbe" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d16021db-6e7c-46b7-b920-3fdbb798a2f0" name="Inserir o valor pago" isLeaf="false">
+            <elementDefinition Id="d57b5382-555c-4fe6-8c4c-9030f99a2f64" />
+            <flowNodeTargets>
+              <controlFlow Id="d5c23cbd-fe41-437f-909a-7ed77ec39ce4" isLeaf="false">
+                <opaqueActionMoniker Id="ca9aaa5b-057b-4c49-9676-42282be0a099" LastKnownName="Validar os inputs" />
+                <elementDefinition Id="aaba66ac-94b8-45f9-bda6-9b449f1a5b49" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode Id="7dc2cab6-0276-44c1-9ff7-eb98e01a9ef8" name="Initial1" isLeaf="false">
+            <elementDefinition Id="0479cc9a-0116-4fb1-8b0a-81b1800c72d4" />
+            <flowNodeTargets>
+              <controlFlow Id="5ae7b970-4556-42d2-aeb5-19b398113332" isLeaf="false">
+                <opaqueActionMoniker Id="a48ab33a-3ee0-4375-938d-68cdd5a3a6d1" LastKnownName="Inserir Valor do Produto" />
+                <elementDefinition Id="42359efe-7947-41f8-b107-0e80a50d5934" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="ca9aaa5b-057b-4c49-9676-42282be0a099" name="Validar os inputs" isLeaf="false">
+            <elementDefinition Id="36d08ac5-cb00-483b-9e39-ab489b68af6a" />
+            <flowNodeTargets>
+              <controlFlow Id="3b1281bd-8a93-4e9c-a708-f9fc7873f9e2" isLeaf="false">
+                <decisionNodeMoniker Id="94ca1797-d632-4718-a909-3de3d4328b92" LastKnownName="Decision1" />
+                <elementDefinition Id="88a37692-e1b1-4b4a-99f9-519d27b21a8e" />
+              </controlFlow>
+              <controlFlow Id="6c5c6f13-8d37-4d9a-8cd4-95b6441a3b79" isLeaf="false">
+                <opaqueActionMoniker Id="b97f21ec-22e6-4236-bbc1-0230e6ad6616" LastKnownName="Validar valor pago" />
+                <elementDefinition Id="65e8123a-41f7-4b36-bf5f-416fbd9ef9d7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="94ca1797-d632-4718-a909-3de3d4328b92" name="Decision1" isLeaf="false">
+            <elementDefinition Id="386b8fca-4fec-4d52-abbc-c1b1efacda1a" />
+            <flowNodeTargets>
+              <controlFlow Id="bd4dc980-6232-45a0-8d16-56cec8aaa6d7" guard="Dados inválidos" isLeaf="false">
+                <opaqueActionMoniker Id="fd6ea661-d3e6-4943-a2c4-004ac171d5ff" LastKnownName="Retornar dados inválidos" />
+                <elementDefinition Id="bafa8aba-8e32-48e4-a388-a874a17fdffe" />
+              </controlFlow>
+              <controlFlow Id="c60e393a-4381-49e7-8e69-082d9797471c" guard="Dados válidos" isLeaf="false">
+                <opaqueActionMoniker Id="6aed5f64-9909-41e8-a4fe-a4f5eb4bdae2" LastKnownName="Calcular troco" />
+                <elementDefinition Id="31081c62-b079-4cd3-a9a6-8a22f4ff9541" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="fd6ea661-d3e6-4943-a2c4-004ac171d5ff" name="Retornar dados inválidos" isLeaf="false">
+            <elementDefinition Id="b490bf4a-d370-4b8f-83a1-48d8b4bce7bc" />
+            <flowNodeTargets>
+              <controlFlow Id="b96be4fd-53b3-42e5-9ef7-3e611ef9ad56" isLeaf="false">
+                <activityFinalNodeMoniker Id="95696b35-1b91-46b2-9c06-b0265aad2124" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="38ad14cd-a750-4f74-9e22-b55e85a30ba6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6aed5f64-9909-41e8-a4fe-a4f5eb4bdae2" name="Calcular troco" isLeaf="false">
+            <elementDefinition Id="8e78e0c2-8e22-43ae-a0e1-b696d6779a23" />
+            <flowNodeTargets>
+              <controlFlow Id="ed49fead-671b-41cd-9c7a-e4be3951a20c" isLeaf="false">
+                <decisionNodeMoniker Id="4e452748-818c-4600-b583-4b1a17d29d2f" LastKnownName="Decision2" />
+                <elementDefinition Id="2c5f97cf-4ea5-406a-b0e1-b577a50cb548" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="95696b35-1b91-46b2-9c06-b0265aad2124" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="c516c86b-e0b3-49fa-9fc1-c0d71b41f5a6" />
+          </activityFinalNode>
+          <decisionNode Id="4e452748-818c-4600-b583-4b1a17d29d2f" name="Decision2" isLeaf="false">
+            <elementDefinition Id="a483c3ea-cafd-46f2-9bb5-e40a32b32607" />
+            <flowNodeTargets>
+              <controlFlow Id="54ce1a41-35bf-4189-990d-1db9f59c80e8" guard="Troco maior que zero" isLeaf="false">
+                <opaqueActionMoniker Id="f8e26120-f1db-45b4-8ad3-58e7d1011b28" LastKnownName="Selecionar processador" />
+                <elementDefinition Id="d169d65d-d9e0-4d86-8d21-c1c2ba5df8da" />
+              </controlFlow>
+              <controlFlow Id="9945460c-82a0-4fbf-a76f-c8c878e37e04" guard="Troco menor ou igual a zero" isLeaf="false">
+                <opaqueActionMoniker Id="d8e8e58a-1c30-4157-812c-540a0823c5b1" LastKnownName="Retorna o resultado do processamento" />
+                <elementDefinition Id="ffb459d0-c4ab-4183-94a1-a253ba1971b5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="f8e26120-f1db-45b4-8ad3-58e7d1011b28" name="Selecionar processador" isLeaf="false">
+            <elementDefinition Id="9220d7ad-fd7b-42b9-a634-0c49c6d75fda" />
+            <flowNodeTargets>
+              <controlFlow Id="67d16c08-9078-4634-971c-dfe8ff7e186e" isLeaf="false">
+                <opaqueActionMoniker Id="3b06d3e5-8e28-4a83-89d9-b09d0ff85c38" LastKnownName="Validar troco" />
+                <elementDefinition Id="67b0d8e8-6e50-4f81-b927-13a6a18b4bbf" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3b06d3e5-8e28-4a83-89d9-b09d0ff85c38" name="Validar troco" isLeaf="false">
+            <elementDefinition Id="59e5ea12-3a17-476f-9d11-3a9d44d2fb2e" />
+            <flowNodeTargets>
+              <controlFlow Id="5827b5fb-d792-4aa5-ad51-c58e86210562" isLeaf="false">
+                <decisionNodeMoniker Id="b84d507e-081d-4aaa-8151-6df43f6456d0" LastKnownName="Decision3" />
+                <elementDefinition Id="6e875b76-b9db-4447-be6a-3dafa55f47c4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="b84d507e-081d-4aaa-8151-6df43f6456d0" name="Decision3" isLeaf="false">
+            <elementDefinition Id="2cf6800e-0d61-4b86-a0f2-35b3f740edca" />
+            <flowNodeTargets>
+              <controlFlow Id="1edf917f-240f-43d4-9f38-2eaf0d20216f" guard="Troco válido" isLeaf="false">
+                <opaqueActionMoniker Id="f1924b1a-ce94-4cf0-bc8a-7ea90c95f071" LastKnownName="Processar troco" />
+                <elementDefinition Id="71760497-9330-4011-b487-dd8dbf1a17ad" />
+              </controlFlow>
+              <controlFlow Id="89da39d9-f6e9-4d42-bbe4-fc744d99b714" guard="Troco inválido" isLeaf="false">
+                <opaqueActionMoniker Id="2ccfad17-f173-4f00-82bc-d7d6c737bab8" LastKnownName="Lança exceção" />
+                <elementDefinition Id="aa1d9f08-0e3c-4f04-a90e-39eb823a34cd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="d8e8e58a-1c30-4157-812c-540a0823c5b1" name="Retorna o resultado do processamento" isLeaf="false">
+            <elementDefinition Id="841541e3-9d93-46e2-9052-687be68069ed" />
+            <flowNodeTargets>
+              <controlFlow Id="eb60d903-394f-4dcf-947f-b294ebe1310c" isLeaf="false">
+                <activityFinalNodeMoniker Id="2cf0933d-f8c6-4ca2-8f1a-4445ef1c3539" LastKnownName="ActivityFinal2" />
+                <elementDefinition Id="dad570b0-00db-49e7-8eca-7b2956576cb6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="2cf0933d-f8c6-4ca2-8f1a-4445ef1c3539" name="ActivityFinal2" isLeaf="false">
+            <elementDefinition Id="ba262c0f-f973-4249-8da5-95e311bb30c4" />
+          </activityFinalNode>
+          <opaqueAction Id="f1924b1a-ce94-4cf0-bc8a-7ea90c95f071" name="Processar troco" isLeaf="false">
+            <elementDefinition Id="9cd09f52-9a62-4759-8da7-c948c8d5808c" />
+            <flowNodeTargets>
+              <controlFlow Id="f84c8617-ca2f-4b90-8f8b-88a2fbb2fbca" isLeaf="false">
+                <sendSignalActionMoniker Id="0ff9145d-8e9a-424a-9ae0-54c44673d334" LastKnownName="Dispara um evento informando que o processador terminou o cálculo." />
+                <elementDefinition Id="7938a145-f732-4c7e-a9fc-3751c1f75d67" />
+              </controlFlow>
+              <controlFlow Id="706c5ba2-ed78-4f5b-96a2-7dad92a290bf" isLeaf="false">
+                <opaqueActionMoniker Id="e3e247d9-2d92-480d-abd9-75907ff29c89" LastKnownName="Subtrai troco processado do valor total a ser retornado" />
+                <elementDefinition Id="9ed0ee2e-6b74-4776-bfe0-8c82bbe68d9e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="2ccfad17-f173-4f00-82bc-d7d6c737bab8" name="Lança exceção" isLeaf="false">
+            <elementDefinition Id="8f34a680-c64d-4077-9cac-8a3bae835d7c" />
+            <flowNodeTargets>
+              <controlFlow Id="53be70f1-1963-45c0-9b02-ad90120a546f" isLeaf="false">
+                <opaqueActionMoniker Id="d8e8e58a-1c30-4157-812c-540a0823c5b1" LastKnownName="Retorna o resultado do processamento" />
+                <elementDefinition Id="150149d6-ac88-452f-b0de-8c16884f22d6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <sendSignalAction Id="0ff9145d-8e9a-424a-9ae0-54c44673d334" name="Dispara um evento informando que o processador terminou o cálculo." isLeaf="false">
+            <elementDefinition Id="3dc2bb50-7be6-4455-bf8f-954d33496316" />
+          </sendSignalAction>
+          <opaqueAction Id="b97f21ec-22e6-4236-bbc1-0230e6ad6616" name="Validar valor pago" isLeaf="false">
+            <elementDefinition Id="8ede13a2-f977-4d67-926d-8563134b395a" />
+            <flowNodeTargets>
+              <controlFlow Id="600c828e-497e-49d2-9831-b61de8cf3281" isLeaf="false">
+                <opaqueActionMoniker Id="bd64e033-0fa6-43bc-8e7f-74544b6af928" LastKnownName="Validar valor produto" />
+                <elementDefinition Id="f628e5e9-2f56-4776-b2f5-058ce2bf6b82" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="bd64e033-0fa6-43bc-8e7f-74544b6af928" name="Validar valor produto" isLeaf="false">
+            <elementDefinition Id="c3dae1bb-6363-4f70-8bd6-3553d94118d0" />
+            <flowNodeTargets>
+              <controlFlow Id="ecbd443b-6f33-434d-9adb-663840209242" isLeaf="false">
+                <opaqueActionMoniker Id="ca9aaa5b-057b-4c49-9676-42282be0a099" LastKnownName="Validar os inputs" />
+                <elementDefinition Id="fb9a7247-9aa8-412c-9ec4-a1fd09c90d1f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e3e247d9-2d92-480d-abd9-75907ff29c89" name="Subtrai troco processado do valor total a ser retornado" isLeaf="false">
+            <elementDefinition Id="ff9bb823-527c-40fd-9a8e-12beb4fd4e73" />
+            <flowNodeTargets>
+              <controlFlow Id="d1b2c46a-1351-424f-b0fd-783b42422f0e" isLeaf="false">
+                <opaqueActionMoniker Id="6aed5f64-9909-41e8-a4fe-a4f5eb4bdae2" LastKnownName="Calcular troco" />
+                <elementDefinition Id="db8a0412-1090-4e0d-81af-7242e8b7bce5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="3d7e16b0-dc82-45f8-b626-0f0c6ad23f17" name="TrocadoSimulator.Modeling">
+    <elementDefinition Id="5cbadcef-5d1d-4204-aba9-96411ff3dd8b" />
+  </package>
+</activityRootModel>

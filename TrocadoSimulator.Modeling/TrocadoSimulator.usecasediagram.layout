@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="TrocadoSimulator">
+  <useCaseModelRootMoniker Id="89c65e18-f129-42eb-bccc-bf93c3539135" />
+  <nestedChildShapes>
+    <actorShape Id="eb7eab3e-a520-4d5d-8ae8-511df2f592de" absoluteBounds="1.125, 1.5, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="9074d109-8bf6-4b2c-8790-e238b8bc0a98" LastKnownName="Usuário" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="e2d769e1-903f-4893-89aa-04b7b270ecda" absoluteBounds="2.875, 0.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="e4173932-0361-48f1-ba9a-e2bbfb162a50" LastKnownName="Inserir Valor do Produto" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.625 : 1.65625); (2.975 : 1.15)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="3c39112d-6026-4594-9f29-9a5ffd58d72b" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="eb7eab3e-a520-4d5d-8ae8-511df2f592de" />
+        <useCaseShapeMoniker Id="e2d769e1-903f-4893-89aa-04b7b270ecda" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="174f9b7a-5e65-457a-b3e4-013c80b275ad" absoluteBounds="2.875, 1.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="a1b7dd61-8889-4862-90d5-340b539b4e5c" LastKnownName="Inserir Valor Pago" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.625 : 1.75); (2.875 : 1.75)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="b061eb4a-e0f2-4426-a525-ebd90829c670" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="eb7eab3e-a520-4d5d-8ae8-511df2f592de" />
+        <useCaseShapeMoniker Id="174f9b7a-5e65-457a-b3e4-013c80b275ad" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="0f884b24-2af4-4201-a152-3ca8717988a3" absoluteBounds="2.875, 2.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="fd26aa32-4cb9-4918-8abf-1445bb7f92f5" LastKnownName="Clicar Botão Submit" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.625 : 1.84375); (2.975 : 2.35)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="99fbe4ad-b238-4904-8c4a-479472df6353" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="eb7eab3e-a520-4d5d-8ae8-511df2f592de" />
+        <useCaseShapeMoniker Id="0f884b24-2af4-4201-a152-3ca8717988a3" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="b7e041b9-6a04-4b6b-810e-f65de10c9130" absoluteBounds="2.875, 3.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="48c4073c-da5f-4b8f-9a0c-1651733c6031" LastKnownName="Calcular Troco" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseDependencyConnector edgePoints="[(3.375 : 2.75); (3.375 : 3.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="a6b43c4c-3c68-4b37-bc52-84c1a87c2e1c" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="0f884b24-2af4-4201-a152-3ca8717988a3" />
+        <useCaseShapeMoniker Id="b7e041b9-6a04-4b6b-810e-f65de10c9130" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <actorShape Id="2fe9f666-bf06-4024-826b-a44662c76526" absoluteBounds="4.875, 3.5, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="9287a708-a6a6-47f5-80c7-94c9324a8276" LastKnownName="Aplicação" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseAssociationConnector edgePoints="[(4.875 : 3.69642857142857); (3.83457251500903 : 3.47347982464479)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="e65632d3-ab09-4f73-9102-44fdf653118e" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="2fe9f666-bf06-4024-826b-a44662c76526" />
+        <useCaseShapeMoniker Id="b7e041b9-6a04-4b6b-810e-f65de10c9130" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="1bb652a7-78d7-45fe-97cc-9c05a2777e59" absoluteBounds="2.875, 4, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="58b9575e-b273-4e87-96f0-fa525045727d" LastKnownName="Exibir Troco Calculado" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(4.875 : 3.82142857142857); (3.80912157106223 : 4.12596526541079)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="31c96578-e5c1-4466-98b7-74cfac50b875" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="2fe9f666-bf06-4024-826b-a44662c76526" />
+        <useCaseShapeMoniker Id="1bb652a7-78d7-45fe-97cc-9c05a2777e59" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>
